@@ -1,1 +1,1 @@
-# wamp-tikki
+# WAMP tikki
