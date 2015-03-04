@@ -17,8 +17,9 @@
       // the URL of the WAMP Router (Crossbar.io)
       //
       var wsuri;
+      console.log('ws://127.0.0.1:' + process.env.PORT || '5000' + '/ws');
       if (document.location.origin == "file://") {
-         wsuri = "ws://127.0.0.1:8080/ws";
+         wsuri = "ws://127.0.0.1:" + process.env.PORT || '5000' + "/ws";
 
       } else {
          wsuri = (document.location.protocol === "http:" ? "ws:" : "wss:") + "//" +
