@@ -27,9 +27,9 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 var autobahn = require('autobahn');
-
+console.log('ws://127.0.0.1:' + process.env.PORT || '5000' + '/ws');
 var connection = new autobahn.Connection({
-   url: 'ws://127.0.0.1:5000/ws',
+   url: 'ws://127.0.0.1:' + process.env.PORT || '5000' + '/ws',
    realm: 'realm1'}
 );
 
